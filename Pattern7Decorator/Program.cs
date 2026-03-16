@@ -16,7 +16,7 @@ namespace Pattern7Decorator
             IWeapon sword = new BaseSword("Стальной меч", 20, 100m);
             PrintWeapon(sword);
             
-            Console.WriteLine("После заточки ");
+            Console.WriteLine("После заточки");
             IWeapon sharpenedSword = new SharpeningDecorator(sword);
             PrintWeapon(sharpenedSword);
 
@@ -37,7 +37,7 @@ namespace Pattern7Decorator
         {
             Console.WriteLine($"Предмет: {weapon.GetDescription()}");
             Console.WriteLine($"Урон: {weapon.GetDamage()}");
-            Console.WriteLine($"Цена: {weapon.GetPrice():F2}");
+            Console.WriteLine($"Цена: {weapon.GetPrice()}");
         }
     }
 }
